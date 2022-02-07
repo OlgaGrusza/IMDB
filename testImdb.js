@@ -1,0 +1,18 @@
+"use strict";
+exports.__esModule = true;
+var claseProfessional_1 = require("./claseProfessional");
+var claseMovie_1 = require("./claseMovie");
+var claseImdb_1 = require("./claseImdb");
+var imdb1 = new claseImdb_1.Imdb([]);
+var pelicula2 = new claseMovie_1.Movie("Haz bien los setters", 2022, "española", "drama");
+var actor3 = new claseProfessional_1.Professional("Miguelon Rubio", 27, "hombre", 78, 190, "rubio", "verde", "caucasico", false, "venezolana", 6, "actor");
+var escritor2 = new claseProfessional_1.Professional("Menchu Guapa", 37, "mujer", 50, 170, "castaño", "marron", "caucasica", false, "española", 9, "escritor");
+var director2 = new claseProfessional_1.Professional("Alonso Feliz", 38, "hombre", 80, 183, "negro", "marron", "caucasica", false, "español", 5, "director");
+var actor1 = new claseProfessional_1.Professional("Olga Grusza", 39, "mujer", 50, 180, "rubio", "gris", "caucasica", false, "polaca", 8, "programadora");
+var actor2 = new claseProfessional_1.Professional("Pablete Zelda", 31, "hombre", 55, 190, "castaño", "marron", "caucasica", false, "español", 8, "programador");
+var actores = [actor1, actor2, actor3];
+pelicula2.setActors(actores);
+pelicula2.setDirector(director2);
+pelicula2.setWriter(escritor2);
+pelicula2.setDirector(director2);
+console.log(imdb1);
